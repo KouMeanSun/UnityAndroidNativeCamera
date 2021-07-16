@@ -176,25 +176,16 @@ public class CameraPluginActivity extends UnityPlayerActivity {
     }
 
     private void requestJavaRendering(int texturePointer) {
-//        Log.e(TAG,"u3d java requestJavaRendering...");
         if (this._update) {
 
             int[] imageBuffer = new int[0];
             if (this._conversionScript != null) {
                 imageBuffer = this._conversionScript.getOutputBuffer();
-//                Log.e(TAG,"u3d java requestJavaRendering imageBuffer.length:"+imageBuffer.length);
-
             }
 
             if (imageBuffer.length > 1) {
                 GLES20.glBindTexture(GL_TEXTURE_2D, texturePointer);
                 GLES20.glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, this._previewSize.getWidth(), this._previewSize.getHeight(), GL_RGBA, GL_UNSIGNED_BYTE, IntBuffer.wrap(imageBuffer));
-
-//                if(frameCount%50 == 0){
-//                    for(int i=0;i<256;i++){
-//                        Log.e(TAG,"u3d java imageBuffer["+i+"]:"+imageBuffer[i]);
-//                    }
-//                }
             }
 
         }
@@ -214,7 +205,6 @@ public class CameraPluginActivity extends UnityPlayerActivity {
     }
 
     private CaptureRequest createCaptureRequest() {
-        Log.e(TAG,"u3d java createCaptureRequest ... ");
         try {
             Builder builder = this._cameraDevice.createCaptureRequest(CameraDevice.TEMPLATE_PREVIEW);
             builder.set(CaptureRequest.CONTROL_AF_MODE, CaptureRequest.CONTROL_AF_MODE_CONTINUOUS_PICTURE);
@@ -228,21 +218,16 @@ public class CameraPluginActivity extends UnityPlayerActivity {
     }
 
     private void startCamera() {
-        Log.e(TAG,"u3d java startCamera ...111");
-        Log.e(TAG,"u3d java startCamera VERSION.SDK_INT:"+VERSION.SDK_INT);
+
         CameraManager manager = (CameraManager)this.getSystemService(CAMERA_SERVICE);
 
         try {
             if (VERSION.SDK_INT >= 23 && this.checkSelfPermission(Manifest.permission.CAMERA)
                     != PackageManager.PERMISSION_GRANTED) {
-                Log.e(TAG,"u3d java startCamera checkSelfPermission");
                 return;
             }else {
-                Log.e(TAG,"u3d java startCamera  failed! no permission!");
             }
-            Log.e(TAG,"u3d java startCamera 222");
             if (VERSION.SDK_INT >= 22) {
-                Log.e(TAG,"u3d java startCamera 333");
                 String pickedCamera = this.getCamera(manager);
                 manager.openCamera(pickedCamera, _cameraStateCallback, null);
 //                manager.openCamera(pickedCamera, this._cameraStateCallback, (Handler)null);
@@ -253,7 +238,6 @@ public class CameraPluginActivity extends UnityPlayerActivity {
                 this._conversionScript = new YuvToRgb(this._renderScript, this._previewSize, CONVERSION_FRAME_RATE);
                 this._conversionScript.setOutputSurface(this._imagePreviewReader.getSurface());
                 this._previewSurface = this._conversionScript.getInputSurface();
-                Log.e(TAG,"u3d java startCamera 444");
             }
         } catch (CameraAccessException var5) {
             var5.printStackTrace();

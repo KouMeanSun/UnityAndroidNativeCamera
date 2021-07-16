@@ -15,16 +15,34 @@ AndroidCamera/.idea/modules.xml
 AndroidCamera/.idea/workspace.xml
 AndroidCamera/.idea/navEditor.xml
 AndroidCamera/.idea/assetWizardSettings.xml
-AndroidCamera.DS_Store
+AndroidCamera/.DS_Store
 AndroidCamera/build
 AndroidCamera/captures
-AndroidCamera.externalNativeBuild
-AndroidCamera.cxx
+AndroidCamera/.externalNativeBuild
+AndroidCamera/.cxx
 
 AndroidCamera/nativecamera/build
 
-AndroidCamera.gradle/
+AndroidCamera/.gradle/
 
 
 
-AndroidCamera.idea/
+AndroidCamera/.idea/
+
+
+androidPro/*.iml
+
+androidPro/local.properties
+androidPro/.idea/caches
+androidPro/.idea/libraries
+androidPro/.idea/modules.xml
+androidPro/.idea/workspace.xml
+androidPro/.idea/navEditor.xml
+androidPro/.idea/assetWizardSettings.xml
+androidPro/.DS_Store
+androidPro/build
+androidPro/captures
+androidPro/.externalNativeBuild
+androidPro/.cxx
+androidPro/.gradle/
+androidPro/.idea/

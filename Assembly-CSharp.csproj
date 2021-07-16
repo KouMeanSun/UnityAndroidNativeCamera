@@ -57,9 +57,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/updateCamera.cs" />
+    <Compile Include="Assets/Scenes/CameraBackground.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets/Shaders/SkyboxBackgroundTexture.shader" />
+     <None Include="Assets/Scenes/DisplayImageShader.shader" />
     <Reference Include="UnityEngine">
       <HintPath>/Applications/Unity/Hub/Editor/2020.3.4f1c1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -272,9 +274,6 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>/Applications/Unity/Hub/Editor/2020.3.4f1c1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
-    </Reference>
-    <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>/Applications/Unity/Hub/Editor/2020.3.4f1c1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
