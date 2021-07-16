@@ -1,0 +1,7 @@
+ninja: Entering directory `/Users/gaomingyang/Documents/MIGUWorkSpace/李小萍/camTest/AndroidCamera/nativecamera/.cxx/cmake/debug/x86'
+[0/1] Re-running CMake...
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/gaomingyang/Documents/MIGUWorkSpace/李小萍/camTest/AndroidCamera/nativecamera/.cxx/cmake/debug/x86
+[1/2] Building CXX object CMakeFiles/NativeCameraPlugin.dir/RenderingPlugin.cpp.o
+[2/2] Linking CXX shared library /Users/gaomingyang/Documents/MIGUWorkSpace/李小萍/camTest/AndroidCamera/nativecamera/build/intermediates/cmake/debug/obj/x86/libNativeCameraPlugin.so

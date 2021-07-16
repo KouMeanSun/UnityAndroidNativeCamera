@@ -1,0 +1,7 @@
+Executable : /Applications/Unity/Hub/Editor/2020.3.4f1c1/PlaybackEngines/AndroidPlayer/SDK/cmake/3.10.2.4988404/bin/ninja
+arguments : 
+-C
+/Users/gaomingyang/Documents/MIGUWorkSpace/李小萍/camTest/AndroidCamera/nativecamera/.cxx/cmake/release/x86_64
+NativeCameraPlugin
+jvmArgs : 
+

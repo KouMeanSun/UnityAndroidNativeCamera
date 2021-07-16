@@ -1,0 +1,3 @@
+ninja: Entering directory `/Users/gaomingyang/Documents/MIGUWorkSpace/李小萍/camTest/AndroidCamera/nativecamera/.cxx/cmake/release/mips'
+[1/2] Building CXX object CMakeFiles/NativeCameraPlugin.dir/RenderingPlugin.cpp.o
+[2/2] Linking CXX shared library /Users/gaomingyang/Documents/MIGUWorkSpace/李小萍/camTest/AndroidCamera/nativecamera/build/intermediates/cmake/release/obj/mips/libNativeCameraPlugin.so
